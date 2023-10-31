@@ -60,6 +60,7 @@ class CustomMission: MissionServer
 	{
 		EntityAI gun = player.GetHumanInventory().CreateInHands("Rev_SRSA2");
 		gun.GetInventory().CreateAttachment("HuntingOptic");
+		gun.GetInventory().CreateAttachment("Rev_Mag_SRSA2_10rnd");
 		addMags(player, "Rev_Mag_SRSA2_10rnd", 5);
 
 		return gun;
@@ -69,6 +70,7 @@ class CustomMission: MissionServer
 	{
 		EntityAI gun = player.GetHumanInventory().CreateInHands("Rev_M2010_Blue");
 		gun.GetInventory().CreateAttachment("HuntingOptic");
+		gun.GetInventory().CreateAttachment("Rev_Mag_M2010_10rnd");
 		addMags(player, "Rev_Mag_M2010_10rnd", 5);
 
 		return gun;
@@ -78,6 +80,7 @@ class CustomMission: MissionServer
 	{
 		EntityAI gun = player.GetHumanInventory().CreateInHands("BO_SAKOTRG");
 		gun.GetInventory().CreateAttachment("HuntingOptic");
+		gun.GetInventory().CreateAttachment("BO_Mag_SAKOTRG_5rnd");
 		addMags(player, "BO_Mag_SAKOTRG_5rnd", 5);
 
 		return gun;
@@ -87,6 +90,7 @@ class CustomMission: MissionServer
 	{
 		EntityAI gun = player.GetHumanInventory().CreateInHands("BO_Delta5_Camo9");
 		gun.GetInventory().CreateAttachment("HuntingOptic");
+		gun.GetInventory().CreateAttachment("BO_Mag_Delta5_10rnd");
 		addMags(player, "BO_Mag_Delta5_10rnd", 5);
 
 		return gun;
@@ -96,6 +100,7 @@ class CustomMission: MissionServer
 	{
 		EntityAI gun = player.GetHumanInventory().CreateInHands("BO_M200_Black");
 		gun.GetInventory().CreateAttachment("HuntingOptic");
+		gun.GetInventory().CreateAttachment("Rev_Mag_SRSA2_10rnd");
 		addMags(player, "BO_Mag_M200_7rnd", 5);
 
 		return gun;
@@ -105,6 +110,7 @@ class CustomMission: MissionServer
 	{
 		EntityAI gun = player.GetHumanInventory().CreateInHands("BO_M300");
 		gun.GetInventory().CreateAttachment("HuntingOptic");
+		gun.GetInventory().CreateAttachment("BO_Mag_M300_7rnd");
 		addMags(player, "BO_Mag_M300_7rnd", 5);
 
 		return gun;
@@ -112,9 +118,10 @@ class CustomMission: MissionServer
 
 	EntityAI m96Class(PlayerBase player)
 	{
-		EntityAI gun = player.GetHumanInventory().CreateInHands("Rev_M96");
+		EntityAI gun = player.GetHumanInventory().CreateInHands("BO_M96");
 		gun.GetInventory().CreateAttachment("HuntingOptic");
-		addMags(player, "Rev_Mag_M96_5rnd", 5);
+		gun.GetInventory().CreateAttachment("BO_Mag_M96_5rnd");
+		addMags(player, "BO_Mag_M96_5rnd", 5);
 
 		return gun;
 	}
@@ -123,6 +130,7 @@ class CustomMission: MissionServer
 	{
 		EntityAI gun = player.GetHumanInventory().CreateInHands("Rev_CDX50");
 		gun.GetInventory().CreateAttachment("HuntingOptic");
+		gun.GetInventory().CreateAttachment("Rev_Mag_CDX50_5rnd");
 		addMags(player, "Rev_Mag_CDX50_5rnd", 5);
 
 		return gun;
@@ -132,6 +140,7 @@ class CustomMission: MissionServer
 	{
 		EntityAI gun = player.GetHumanInventory().CreateInHands("CPB_AX50_Black");
 		gun.GetInventory().CreateAttachment("HuntingOptic");
+		gun.GetInventory().CreateAttachment("CPB_AX50_Magazine");
 		addMags(player, "CPB_AX50_Magazine", 5);
 
 		return gun;
@@ -141,6 +150,7 @@ class CustomMission: MissionServer
 	{
 		EntityAI gun = player.GetHumanInventory().CreateInHands("JebsGuns_VSSK");
 		gun.GetInventory().CreateAttachment("HuntingOptic");
+		gun.GetInventory().CreateAttachment("JebsGuns_Mag_VSSK_5rnd");
 		addMags(player, "JebsGuns_Mag_VSSK_5rnd", 5);
 
 		return gun;
@@ -150,6 +160,7 @@ class CustomMission: MissionServer
 	{
 		EntityAI gun = player.GetHumanInventory().CreateInHands("BO_OSV");
 		gun.GetInventory().CreateAttachment("HuntingOptic");
+		gun.GetInventory().CreateAttachment("BO_Mag_OSV_5rnd");
 		addMags(player, "BO_Mag_OSV_5rnd", 5);
 
 		return gun;
@@ -159,6 +170,7 @@ class CustomMission: MissionServer
 	{
 		EntityAI gun = player.GetHumanInventory().CreateInHands("BO_GM6Lynx");
 		gun.GetInventory().CreateAttachment("HuntingOptic");
+		gun.GetInventory().CreateAttachment("BO_Mag_GM6Lynx_5rnd");
 		addMags(player, "BO_Mag_GM6Lynx_5rnd", 5);
 
 		return gun;
@@ -168,6 +180,7 @@ class CustomMission: MissionServer
 	{
 		EntityAI gun = player.GetHumanInventory().CreateInHands("CPB_Barret");
 		gun.GetInventory().CreateAttachment("HuntingOptic");
+		gun.GetInventory().CreateAttachment("CPB_Barret_Magazine");
 		addMags(player, "CPB_Barret_Magazine", 5);
 
 		return gun;
@@ -177,6 +190,7 @@ class CustomMission: MissionServer
 	{
 		EntityAI gun = player.GetHumanInventory().CreateInHands("A2M107");
 		gun.GetInventory().CreateAttachment("HuntingOptic");
+		gun.GetInventory().CreateAttachment("A2M107_Magazine");
 		addMags(player, "A2M107_Magazine", 5);
 
 		return gun;
@@ -186,6 +200,7 @@ class CustomMission: MissionServer
 	{
 		EntityAI gun = player.GetHumanInventory().CreateInHands("A2AS50");
 		gun.GetInventory().CreateAttachment("HuntingOptic");
+		gun.GetInventory().CreateAttachment("A2AS50_Magazine");
 		addMags(player, "A2AS50_Magazine", 5);
 
 		return gun;
@@ -204,7 +219,7 @@ class CustomMission: MissionServer
 		EntityAI primary;
 		EntityAI axe = player.GetInventory().CreateInInventory("FirefighterAxe");
 
-		switch (Math.RandomInt(0, 15)) {
+		switch (Math.RandomInt(0, 14)) {
 			case 0: primary = srsClass(player); break;
 			case 1: primary = m2010Class(player); break;
 			case 2: primary = m10sakoClass(player); break;

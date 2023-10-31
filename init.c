@@ -218,9 +218,8 @@ class CustomMission: MissionServer
 			case 10: primary = osv96Class(player); break;
 			case 11: primary = gm6lynxClass(player); break;
 			case 12: primary = m82Class(player); break;
-			case 13: primary = m82a1Class(player); break;
-			case 14: primary = m107Class(player); break;
-			case 15: primary = as50Class(player); break;
+			case 13: primary = m107Class(player); break;
+			case 14: primary = as50Class(player); break;
 		}
 
 		player.LocalTakeEntityToHands(primary);
